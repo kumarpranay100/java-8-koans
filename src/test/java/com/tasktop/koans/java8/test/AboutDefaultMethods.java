@@ -56,6 +56,7 @@ public class AboutDefaultMethods {
 		LongAdder adder = new LongAdder();
 
 		numbers.forEach(number -> {
+			adder.add(number);
 		}); // FIXME: add the number to the adder
 
 		assertThat(adder.sum()).isEqualTo(5);
